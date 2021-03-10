@@ -26,6 +26,7 @@ button {
   --black-color: #212121;
   --grey-color: #757575;
   --blue-color: #2196f3;
+  --grey-color-social: #AFB1B8;
 }
 
 /* Контейнер  */
@@ -83,7 +84,7 @@ button {
   display: flex;
   align-items: center;
 }
-.site-contakt li:last-child {
+.site-contakt list-image:last-child {
   margin-left: 50px;
 }
 /* .site-nav > .header-link {
@@ -358,7 +359,7 @@ button {
 }
 .comand-info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .comand-name {
   font-weight: 500;
@@ -395,6 +396,85 @@ button {
   margin-top: 0px;
   width: 270px;
   text-align: center; 
+}
+.comand-social {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  
+  
+}
+.link-comand {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+.link-comand * {
+  /* outline: 1px solid red; */
+  /* color: var(--grey-color-social); */
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--grey-color-social);
+}
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--blue-color);
+  color: #FFFFFF;
+}
+.social-icon {
+fill: currentColor; 
+}
+
+.social-item {
+  display: flex;
+  /* color: var(--grey-color-social) */
+}
+
+/* Наши Клиенти */
+.clients-container {
+  width: 1600px;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+  display: block;
+  text-align: center;
+}
+.clients * {
+  /* outline: 1px solid red; */
+}
+.clients-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+}
+.clients-item {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
 }
 
 /* Footer */
@@ -512,7 +592,7 @@ button {
   margin-bottom: 50px;
   justify-content: center;
 } 
-.filter-btn {
+.filter-   {
   margin-right: 8px;
 }
 .filter-btn: :last-child {
