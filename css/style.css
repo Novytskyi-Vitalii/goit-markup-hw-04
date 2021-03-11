@@ -340,6 +340,7 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
   /* justify-content: space-between; */
+
 }
 .comand-image {
   margin-right: 30px;
@@ -403,7 +404,6 @@ button {
   padding-right: 32px;
   padding-bottom: 30px;
   
-  
 }
 .link-comand {
   display: flex;
@@ -411,11 +411,37 @@ button {
   padding: 0;
   margin: 0;
   justify-content: space-between;
+
 }
 .link-comand * {
   /* outline: 1px solid red; */
   /* color: var(--grey-color-social); */
 }
+ /* CОЦМЕРЕЖІ для команди */
+
+.comand-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--grey-color-social);
+}
+.comand-item:hover,
+.comand-item:focus {
+  background-color: var(--blue-color);
+  color: #FFFFFF;
+}
+.comand-icon {
+fill: currentColor; 
+}
+
+.social-item {
+  display: flex;
+  /* color: var(--grey-color-social) */
+}
+/* СОЦМЕРЕЖІ для футера */
 
 .social-item {
   display: flex;
@@ -549,6 +575,7 @@ fill: currentColor;
 }
 .card {
   background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .card-title {
   font-family: Roboto;
@@ -681,8 +708,12 @@ color: #FFFFFF;
   margin-bottom: 50px;
   justify-content: center;
 } 
-.filter-   {
+.filter-btn {
   margin-right: 8px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .filter-btn: :last-child {
   margin-right: 0px;
@@ -720,6 +751,10 @@ margin-top: 30px;
 }
 .item {
   border: 1px solid #EEEEEE;
+}
+.item:hover,
+.item:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 /* .item:nth-child(3n + 3) {
   margin: 0;
