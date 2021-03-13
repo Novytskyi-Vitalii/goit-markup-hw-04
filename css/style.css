@@ -87,11 +87,12 @@ button {
 .site-contakt list-image:last-child {
   margin-left: 50px;
 }
-.contakt-mail {
+
+/* .contakt-mail {
   width: 16px;
   height: 12px;
-  tiil: green;
-}
+  tiil: tomato;
+} */
 
 .logo {
   display: flex
@@ -131,9 +132,16 @@ button {
   color: var(--black-color);
   text-decoration: none;
 }
-.site-contakt .link:hover,
-.site-contakt .link:focus {
+.site-contakt .link-contakt:hover,
+.site-contakt .link-contakt:focus {
+  fill: var(--blue-color);
   color: var(--blue-color);
+}
+
+/* .site-contakt .email:hover {
+  color: var(--blue-color);
+} */
+.site-contakt .phone:hover {
 }
 .site-nav .link.current {
   color: var(--blue-color);
@@ -149,7 +157,31 @@ button {
 .header-link {
   padding-left: 0;
 }
+.phone {
+  margin-left: 30px;
+}
+.link-contakt {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--black-color);
+  text-decoration: none;
+  /* justify-content: center; */
+  align-items: center;
+}
+/* .link-contakt .:hover, 
+.link-contakt:focus {
+  color: var(--blue-color);
+} */
 
+.contakt-mail {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  
+  
+}
 /* Hero */
 
 .hero >.overlay {
@@ -239,6 +271,9 @@ button {
 }
 .section-item {
   margin-right: 30px;
+}
+.section-item:last-child {
+  margin-right: 0;
 }
 .section-item::before {
   display: block;
@@ -348,7 +383,6 @@ button {
 .comand-image:last-child {
   margin-right: 0;
 }
-
 .comand-title {
   font-style: normal;
   font-weight: 700;
@@ -360,8 +394,11 @@ button {
   padding-bottom: 50px; */
 }
 .comand-info {
+  width: 270px;
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
 }
 .comand-name {
   font-weight: 500;
@@ -396,14 +433,13 @@ button {
   line-height: 1.71;
   color: var(--grey-color);
   margin-top: 0px;
-  width: 270px;
   text-align: center; 
+  margin-bottom: 16px;
 }
 .comand-social {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 30px;
-  
 }
 .link-comand {
   display: flex;
@@ -468,12 +504,13 @@ fill: currentColor;
 
 /* Наши Клиенти */
 .clients-container {
-  width: 1600px;
+  width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
+  /* padding-left: 215px;
+  padding-right: 215px; */
   display: block;
   text-align: center;
 }
@@ -610,7 +647,8 @@ color: #FFFFFF;
   /* height: 168px; */
   display: inline-block;
   padding-top: 12px;
-  padding-left: 70px;
+  margin-left: 70px;
+  /* padding-left: 70px; */
   /* box-sizing: border-box; */
   /* padding-bottom: 100px; */
 }
@@ -660,25 +698,37 @@ color: #FFFFFF;
 .button {
   font-family: inherit;
   background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--black-color);
-  width: 145px;
-  height: 38px;
+  padding: 6px 22px;
   border-radius: 4px;
   border: none;
-  /* margin: 5px; */
 }
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--blue-color);
   color: var(--white-color);
+
 }
+/* .filter-btn:hover,
+.filter-btn:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+} */
 .button-primery {
   font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
   background-color: var(--blue-color);
   color: var(--white-color);
-  width: 145px;
-  height: 38px;
+  padding: 6px 22px;
   border-radius: 4px;
-  /* margin: 5px; */
 }
 
 .button .link .current {
@@ -730,12 +780,6 @@ color: #FFFFFF;
 
   margin-left: -30px;
   margin-top: -30px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--black-color);
-  text-decoration: none;
 /* 
   margin-left: -30px;
   margin-top: -30px;
